@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>U.M.V. JAMSONA - All in One</title>
+  <link rel="stylesheet" href="style.css">
+
+<!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "SAMPLE_API_KEY",
+    authDomain: "sample-project.firebaseapp.com",
+    projectId: "sample-project",
+    storageBucket: "sample-project.appspot.com",
+    messagingSenderId: "1234567890",
+    appId: "1:1234567890:web:sampleappid",
+    databaseURL: "https://sample-project-default-rtdb.firebaseio.com"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</head>
+<body>
+  <header>  
+  <img src="/images/h.jpg" class="left-image" alt="School Logo">
+    <h1>U.M.V. JAMSONA</h1>
+    <p>Empowering Education, Enriching Lives</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#events">Events</a>
+    <a href="#notice">Notice</a>
+    <a href="#results">Results</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+    <a href="#" onclick="showLogin()">Admin Login</a>
+  </nav>
+
+  <main id="home">
+    <h2>Welcome to Our School</h2>
+    <p>Uttar Madhyamik Vidyalaya Jamsona is dedicated to delivering excellence in education.</p>
+  </main>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-slider">
+      <div class="slider-container">
+        <div class="slide"><img src="/images/h.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="/images/h.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="/images/h.jpg" alt="Image 3"></div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Events</h2>
+    <ul class="events">
+ <li><strong>01 July 2025:</strong> Annual Day – 20 August 2025.</li>
+ <li><strong>10 July 2025:</strong> Parent-teacher meeting (Classes 6–12).</li>
+ <li><strong>15 August 2025:</strong> Independence Day function at 8:00 AM.</li>
+ </ul>
+ </section>
+
+  <section id="notice">
+    <h2>Notice Board</h2>
+    <ul class="notice-board">
+      <li><strong>01 July 2025:</strong> School reopens after summer vacation.</li>
+      <li><strong>10 July 2025:</strong> Parent-teacher meeting (Classes 6–12).</li>
+      <li><strong>15 August 2025:</strong> Independence Day function at 8:00 AM.</li>
+    </ul>
+  </section>
+
+  <section id="results">
+    <h2>Our Topers </h2
+    <h1>section 2024 - 2025</h1>
+    <table>
+      <tr><th>School Rank</th><th>Student</th><th>Class</th><th>Term</th><th>Marks (%)</th></tr>
+      <tr><td>1</td><td>Rahul Kumar</td><td>10th</td><td>Mid-Term</td><td>85%</td></tr>
+      <tr><td>1</td><td>Priya Sharma</td><td>8th</td><td>Final</td><td>91%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      <tr><td>1</td><td>Amit Yadav</td><td>12th</td><td>Pre-Board</td><td>78%</td></tr>
+      
+    </table>
+  </section>
+
+  <section id="register">
+    <h2>Student Registration</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="number" placeholder="Age" required><br>
+      <input type="text" placeholder="Class" required><br>
+      <input type="email" placeholder="Parent Email" required><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: umvjamsona@gmail.com</p>
+    <p>Phone: +91 99999 99999</p>
+    <p>Address: Jamsona, rohtas,bihar, India</p>
+    <p>Deplopre: Himanshu Choudhary</p>
+  </section>
+
+  <footer>&copy; 2026 U.M.V. JAMSONA</footer>
+
+  <div id="loginModal" class="login-modal">
+    <div class="login-box">
+      <span class="close-btn" onclick="closeLogin()">&times;</span>
+      <h2>Admin Login</h2>
+      <form onsubmit="handleLogin(event)">
+        <input type="text" id="username" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
